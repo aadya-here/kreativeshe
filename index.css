@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset some basic styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  width: 100%;
+  margin: 2em 2em;
+}
+.container {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  font-size: 16px;
+  border-radius: 0.5em;
+  background-color: #2B2424;
+  border-bottom: 10px solid #d60687;
+}
+i {
+  color: #d60687;
+  font-size: 2.5em;
+  text-align: center;
+}
+span.num {
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+span.text {
+  color: #e0e0e0;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+
+.header-container {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  background-image: url('images/bg_doodle.png');
+  background-size: 300px 300px; 
+  background-repeat: repeat; 
+  /* background-color: #2B2424; */
+  color: #2B2424;
+}
+
+.heading-container {
+  text-align: center;
+  margin: 1.5em;
+}
+
+.heading-container h2{
+  /* margin: 1em; */
+  font-size: 3em;
+}
+
+.highlight-purple {
+  color: #8B0055; 
+  font-family: 'Anton', sans-serif;
+  font-weight: 500;
+}
+
+.highlight-black {
+  color: #2B2424; 
+  font-family: 'Anton', sans-serif;
+  font-weight: 500;
+}
+
+.cta {
+  text-align: center;
+  margin: 1em;
+
+}
+
+.cta p {
+  font-size: 2em;
+  margin-bottom: 2em;
+  font-weight: 500;
+}
+
+.cta-button {
+  padding: 1em 2em;
+  text-decoration: none;
+  margin-top: 0em;
+  font-size: 1.2em;
+  font-weight: 400;
+  background-color: #8B0055;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #d60687;
+}
+
+.services-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 3.5em;
+  margin: 0.2em;
+  color: #720045; 
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subheading {
+  font-size: 1.3em;
+  margin: 0.5em;
+  color: #2B2424; 
+  font-weight: 500;
+  text-align: center
+}
+
+
+.ctr-accordion{
+  max-width: 1400px;
+  padding-top: 0;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  gap: 20px;
+  overflow: hidden;
+  margin: 1em auto;
+}
+
+.tab{
+  position: relative;
+  width: 20%;
+  height: inherit;
+  padding: 2em;
+  background: rgb(150,150,150);
+  cursor: pointer;
+  transition: width .5s ease;
+  border-radius: 25px;
+}
+
+.tab img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  border-radius: 25px;
+  
+}
+
+.tab:hover img{
+  opacity: 0.9;
+  filter:blur(0.25em);
+}
+
+.tab:hover{
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust as needed */
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tab:hover .overlay {
+  opacity: 1;
+}
+
+.tab .overlay h3 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+  font-family: 'Anton', sans-serif;
+  font-weight: 500;
+  text-shadow: #2B2424 1px 1px 15px;
+}
+
+.tab .overlay p {
+  font-size: 2.5em;
+  color: #e0e0e0;
+  text-shadow: #2B2424 1px 1px 15px;
+}
+
+
+.brands{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* width: 300px; */
+}
+
+.brands img{
+  max-width: 300px;
+  max-height: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.line {
+  width: 45%;
+  border: 1px solid #2B2424;
+  border-radius: 1px; /* Adjust border radius as needed */
+  margin: 2em auto; /* Center horizontally */
+  align-self: center; /* Center vertically */
+}
+
+
+.why-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  height: auto;
+  /* background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  /* background-color: #2B2424; */
+}
+
+.subdiv {
+  position: relative; /* Ensure the container is the reference for absolute positioning */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* overflow: hidden; Hide any overflow from the image */
+  width: 100%; /* Ensure the container takes full width if needed */
+  height:300px; /* Set height to viewport height or any specific value */
+}
+
+.subdiv img {
+  position: absolute;
+  top: 0;
+  width: 100%; 
+  /* max-height: 100%;  */
+  object-fit: contain;
+  transition: opacity 1s; /* Smooth transition for fading out */
+}
+
+.cta-buttonx {
+  top: 0;
+  text-decoration: none;
+  position: absolute; /* Position the button absolutely within the container */
+  z-index: 1; /* Ensure the button stays behind the image initially */
+  opacity: 0; /* Initially hide the button */
+  transition: opacity 1s; /* Smooth transition for fading in */
+}
+
+
+
+
+.left-subdiv {
+  padding: 1em;
+  margin: 1em;
+  /* background-color: aqua; */
+  width: 35%;
+  font-size: 1.1em;
+
+}
+
+.mid-subdiv {
+  padding: 1em;
+  margin: 1em;
+  /* background-color: pink; */
+  width: 20%;
+  height: 300px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* overflow: hidden; */
+  margin-top: 12em ;
+}
+
+.right-subdiv {
+  padding: 1em;
+  margin: 1em;
+  /* background-color: purple; */
+  width: 35%;
+}
+
+
+.mid-subdiv img {
+  width: 80%; /* Resize the image to 80% of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure the image does not exceed the width of the div */
+  max-height: 100%; /* Ensure the image does not exceed the height of the div */
+  object-fit: contain; /* Fit the image within the container */
+
+}
+
+
+.rocket {
+  /* Set the initial position (no translation) */
+  transform: translateY(0);
+  /* Add a transition for smooth animation */
+  transition: transform 3s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+
+/* .rocket:hover {
+  transform: translateY(-12em);
+} */
+
+.rocket.moved {
+  transform: translateY(-1000em);
+}
+
+.subdiv .smoke {
+  transition: opacity 1s; /* Smooth transition for fading out */
+}
+
+.subdiv .smoke.fade-out {
+  opacity: 0; /* Make the image transparent */
+}
+
+.subdiv .smoke.fade-out ~ .cta-button {
+  opacity: 1; /* Show the button when the image fades out */
+}
+
+/* .socials-container{
+
+} */
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 85vw;
+  }
+  .container {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .container {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    gap: 15px;
+  }
+  .container {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+}

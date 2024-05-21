@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="navbar.css" />
+
+    
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="index.html"><img clas = logo src="logos/ks_logo.png" alt="KreativeShe"></a></li>
+          <li class="hideOnMobile"><a href="about.html">About Us</a></li>
+          <li class="hideOnMobile"><a href="services.html">Services</a></li>
+          <li class="hideOnMobile"><a href="process.html">Our Process</a></li>
+          <li class="hideOnMobile"><a href="careers.html">Careers</a></li>
+          <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    <div class="container">
+        <div class="form-wrapper">
+            <h2 class = "heading" style = "font-size: 1.6em; font-weight: 700;">We may not be actively hiring, but are open to discussion if you impress us!</h2>
+            <form>
+                <div class="form-group">
+                    <div class="services"> 
+                    <label style="font-family: 'Playfair Display', serif; font-weight: 800;">Tell Us About Yourself</label>
+                    </div>
+                    <input type="text" placeholder="Your Name*" required>
+                    <input type="number" placeholder="Your Age*" required>
+                    <input type="number" placeholder="Your Phone*" required>
+                    <input type="email" placeholder="Your Email*" required>
+                    
+
+
+                    <div class="services">
+                    <label style="font-family: 'Playfair Display', serif; font-weight: 800;">Show Us Your Skills</label>
+                    </div>
+                    <input type="text" placeholder="Your Portfolio Link*" required>
+                    <input type="text" placeholder="Your CV's Link*" required">
+                    <input type="text" placeholder="Your LinkedIn Account">
+
+                    </div>
+
+                    <div class="services"> 
+                        <label style="font-family: 'Playfair Display', serif; font-weight: 800;">What is your forte?</label>
+                        <div class="form-group">
+                            
+                            <input type="checkbox" id="social-media-management">
+                            <label for="social-media-marketing">Social Media Management</label>
+    
+                            <input type="checkbox" id="content-creation">
+                            <label for="content-marketing">Content Creation</label>
+    
+                            <input type="checkbox" id="digital-marketing">
+                            <label for="seo">Digital Marketing</label>
+                            
+                            <input type="checkbox" id="web-design">
+                            <label for="influencer-marketing">Web Design</label>
+    
+                            <input type="checkbox" id="seo">
+                            <label for="other">SEO</label>
+
+                        
+                        <textarea placeholder="How Can You Help Kreative She?*" required></textarea>
+                </div>
+
+                <div class="services"> 
+                    <label style="font-family: 'Playfair Display', serif; font-weight: 800;">What type of work are you interested in</label>
+                    <div class="form-group">
+                        
+                        <input type="radio" id="full-timet">
+                        <label for="social-media-marketing">Full Time</label>
+
+                        <input type="radio" id="part-time>
+                        <label for="content-marketing">Part-Time</label>
+
+                        <input type="radio" id="freelance">
+                        <label for="content-marketing">Freelance</label>
+            </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

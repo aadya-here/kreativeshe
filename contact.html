@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="navbar.css" />
+
+    
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="index.html"><img clas = logo src="logos/ks_logo.png" alt="KreativeShe"></a></li>
+          <li class="hideOnMobile"><a href="about.html">About Us</a></li>
+          <li class="hideOnMobile"><a href="services.html">Services</a></li>
+          <li class="hideOnMobile"><a href="process.html">Our Process</a></li>
+          <li class="hideOnMobile"><a href="careers.html">Careers</a></li>
+          <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+
+    <div class="container">
+        <div class="form-wrapper">
+            <h2 class = "heading">Get in Touch</h2>
+            <form>
+                <div class="form-group">
+                    <div class="services"> 
+                    <label style="font-family: 'Playfair Display', serif; font-weight: 800;">Tell Us About Yourself</label>
+                    </div>
+                    <input type="text" placeholder="Your Name*" id="name" required>
+                        <input type="text" placeholder="Company Name" id="company-name">
+                        <input type="number" placeholder="Your Phone*" id="phone" required>
+                        <input type="email" placeholder="Your Email*" id="email" required>
+                        <input type="text" placeholder="Your LinkedIn Profile" id="linkedin-profile">
+
+                        <div class="services">
+                            <label style="font-family: 'Playfair Display', serif; font-weight: 800;">Show Us Your Business</label>
+                        </div>
+                        <input type="text" placeholder="Your Business's Website Link" id="business-website">
+                        <input type="text" placeholder="Your Business's Instagram Account" id="business-instagram">
+                        <input type="text" placeholder="Your Business's LinkedIn Page" id="business-linkedin">
+                        <input type="text" placeholder="Your Business's Facebook Page" id="business-facebook">
+
+             </div>
+                <div class="services"> 
+                    <label style="font-family: 'Playfair Display', serif; font-weight: 800;">Where do you need help in?</label>
+                    <div class="form-group">
+                        
+                        <input type="checkbox" id="social-media-management">
+                        <label for="social-media-marketing">Social Media Management</label>
+
+                        <input type="checkbox" id="content-creation">
+                        <label for="content-marketing">Content Creation</label>
+
+                        <input type="checkbox" id="digital-marketing">
+                        <label for="seo">Digital Marketing</label>
+                        
+                        <input type="checkbox" id="web-design">
+                        <label for="influencer-marketing">Web Design</label>
+
+                        <input type="checkbox" id="seo">
+                        <label for="other">SEO</label>
+                        
+                        <textarea placeholder="Your Goal(s)*" id="goals" required></textarea>
+                </div>
+                <button type="submit" onclick="getValue();">Unlock Your Business's Potential</button>
+
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            </form>
+        </div>
+    </div>
+    <script src="sendemail.js"></script>
+    
+</body>
+</html>

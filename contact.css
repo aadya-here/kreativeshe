@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset some basic styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background-color: white;
+}
+
+.heading {
+    font-size: 3.5em;
+    margin: 0.2em;
+    color: #720045; 
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-align: center;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    /* background-color: #2d2d2d; */
+    padding: 40px;
+    border-radius: 8px;
+    max-width:60%;
+    margin: 20px auto;
+}
+
+.form-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.form-wrapper h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 2em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 1%;
+    border-radius: 4px;
+    border: 1px solid #2B2424;
+    /* background-color: #F7EDE4; */
+    color: #d60687;
+}
+
+/* .form-group textarea {
+    width: 60%;
+    height: 100px;
+
+} */
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #d60687;
+    outline: none;
+}
+
+.form-group.services {
+    text-align: center;
+}
+
+.form-group.services label {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.form-group.services div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group.services input[type="checkbox"] {
+    margin-right: 1em;
+}
+
+button[type="submit"] {
+    width: 60%;
+    padding: 10px;
+    margin-top: 0em;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: #8B0055;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+
+button[type="submit"]:hover {
+    background-color: #d60687;
+}
