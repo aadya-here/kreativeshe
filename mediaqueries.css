@@ -1,0 +1,145 @@
+@media screen and (max-width: 1024px) {
+    .wrapper {
+      width: 85vw;
+    }
+    .container {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .container {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      font-size: 14px;
+    }
+
+    .subheading{
+        text-align: justify;
+    }
+
+  }
+  
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      gap: 15px;
+    }
+    .container {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+    }
+    .subheading{
+        text-align: justify;
+    }
+
+  }
+  
+  
+  @media (max-width: 1200px) {
+    .tab .overlay h3 {
+      font-size: 2.5em;
+    }
+    .tab .overlay p {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .tab .overlay h3 {
+      font-size: 2em;
+    }
+    .tab .overlay p {
+      font-size: 1.75em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ctr-accordion {
+      flex-direction: column;
+      height: auto;
+    }
+    .tab {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+    .tab .overlay h3 {
+      font-size: 1.75em;
+    }
+    .tab .overlay p {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .tab {
+      height: 250px;
+      padding: 1em;
+    }
+    .tab .overlay h3 {
+      font-size: 1.5em;
+    }
+    .tab .overlay p {
+      font-size: 1.25em;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .brands img{
+      padding: 1.5em;
+      max-width: 30%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sub-container {
+      flex-direction: column;
+      text-align: justify;
+    }
+  
+    .left-subdiv, .right-subdiv, .mid-subdiv, .subdiv {
+      width: 100%;
+    }
+  
+    .left-subdiv {
+      order: 1;
+      
+    }
+
+    .why-container .heading{
+      text-align: center;
+      font-size: 1.6em;
+    }
+
+    
+  
+    .right-subdiv {
+      order: 2;
+    }
+
+  .right-subdiv .heading{
+      text-align: center;
+      font-size: 2em;
+    }
+  
+    .mid-subdiv {
+      order: 3;
+      height: 150px;
+    }
+  
+    .subdiv {
+      order: 4;
+      padding: 1em;
+    }
+  }
+  

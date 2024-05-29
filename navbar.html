@@ -1,0 +1,121 @@
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: white;
+    top:0;
+    left: 0;
+    margin-top: 0 ;
+    border-bottom: 3px solid #2B2424;
+    z-index: 100;
+    position: sticky;
+    /* min-height: 50px; */
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
+  }
+  
+  nav img {
+    height: 1.2em;
+    margin: 0.7em;
+    /* position: sticky; */
+  }
+  nav ul {
+    width: 100%;
+    margin: 0.7em;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li {
+    height: 50px;
+    font-size: 1.4em;
+    font-weight: 550;
+    margin-right: 1em;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  nav a:hover {
+    /* background-color: #d60687; */
+    text-decoration: underline;
+    /* color: #F7EDE4; */
+  }
+  nav li:first-child {
+    margin-right: auto;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    /* backdrop-filter: blur(12px); */
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1000;
+  }
+  .sidebar li {
+    width: 100%;
+  }
+  .sidebar a {
+    width: 100%;
+  }
+  .menu-button {
+    display: none;
+  }
+
+  @media(max-width: 800px) {
+    .hideOnMobile {
+      display: none;
+    }
+    .menu-button {
+      display: block;
+    }
+  }
+  
+  @media(max-width: 400px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+  </style>
+
+
+<nav class="navbar">
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Our Process</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html"><img clas = logo src="logos/ks_logo.png" alt="KreativeShe"></a></li>
+      <li class="hideOnMobile"><a href="about.html">About Us</a></li>
+      <li class="hideOnMobile"><a href="services.html">Services</a></li>
+      <li class="hideOnMobile"><a href="process.html">Our Process</a></li>
+      <li class="hideOnMobile"><a href="careers.html">Careers</a></li>
+      <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+ 

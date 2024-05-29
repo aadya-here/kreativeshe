@@ -16,34 +16,17 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="bolt.ico">
   </head>
   <body>
 <!-- navbar --> 
-    <nav>
-      <ul class="sidebar">
-        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="process.html">Our Process</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-      <ul>
-        <li><a href="index.html"><img clas = logo src="ks_logo.png" alt="KreativeShe"></a></li>
-        <li class="hideOnMobile"><a href="about.html">About Us</a></li>
-        <li class="hideOnMobile"><a href="services.html">Services</a></li>
-        <li class="hideOnMobile"><a href="process.html">Our Process</a></li>
-        <li class="hideOnMobile"><a href="careers.html">Careers</a></li>
-        <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
-        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
-      </ul>
+    <nav class="navbar">
     </nav>
 
 <!-- header -->
 
     <div class="header-container">
-
-
     <div class="heading-container">
 
       <h1 style="font-family: 'Playfair Display', serif; font-size: 2.5em;">Grow Your Business With Us</h1>
@@ -80,7 +63,7 @@
   
     <div class="cta">
     
-    <p>Get the best digital services for your business</p>
+    <p style="font-size: 1.5em;">Get the best digital services for your business</p>
 
     <a href="contact.html" class="cta-button">Get Started</a>
 
@@ -143,7 +126,7 @@
   <div class="brands">
     <img src="design_sutra.png" alt="brand1">
     <img src="tee_rex.png" alt="brand2">
-    <img src="tenson.png" alt="brand3">
+    <img src="tenson_logo_black@2x.png" alt="brand3">
     <!-- <img src="images/brand4.png" alt="brand4"> -->
     <!-- <img src="images/brand5.png" alt="brand5">
     <img src="images/brand6.png" alt="brand6"> -->
@@ -156,23 +139,25 @@
 <!-- why -->
 
 <div class="why-container">
-  <h2 class="heading" style="text-align: left;">WHY DO YOU NEED A DIGITAL PRESENCE?</h2>
+  <h2 class="heading" >WHY DO YOU NEED A DIGITAL PRESENCE?</h2>
   <div class="sub-container">
     
     <div class="left-subdiv">
-      <p>If you are not using digital marketing services for your business yet, you might as well be advertising via a carrier pigeon! 
+      <p style="text-align: justify;">If you are not using digital marketing services for your business yet, you might as well be advertising via a carrier pigeon! 
         <br>
         Jokes aside, partnering with a digital marketing agency today is no longer optional, it's a necessity. If you want to reach a specific demographic, if you want to rank higher in search engine results, if you want to generate those much-needed leads and if you want to be seen and heard on world wide web marketing agency is your only bet! Working with a digital marketing agency can help you achieve all of these goals and more. So what are you waiting for? Contact a digital marketing agency today and start taking your business to the next level!</p>
     </div>
     <!-- <p>click to launch</p> -->
     <div class="mid-subdiv">
+
+      <p>click to launch</p>
       
       <img src="rocket.png" alt="Rocket" class="rocket">
     </div>
 
     <div class="right-subdiv">
-      <h3 class="heading" style="text-align: right; font-size: 2.5em;">WHY KREATIVE SHE</h3>
-      <p style="text-align: right;">If you are not using digital marketing services for your business yet, you might as well be advertising via a carrier pigeon! Jokes aside, partnering with a digital marketing agency today is no longer optional, it's a necessity. If you want to reach a specific demographic, if you want to rank higher in search engine results, if you want to generate those much-needed leads and if you want to be seen and heard on world wide web marketing agency is your only bet! Working with a digital marketing agency can help you achieve all of these goals and more. So what are you waiting for? Contact a digital marketing agency today and start taking your business to the next level!</p>
+      <h3 class="heading"> <span class="highlight-black"> WHY KREATIVE</span> <span class="highlight-purple">SHE?</span></h3>
+      <p style="text-align: justify;">If you are not using digital marketing services for your business yet, you might as well be advertising via a carrier pigeon! Jokes aside, partnering with a digital marketing agency today is no longer optional, it's a necessity. If you want to reach a specific demographic, if you want to rank higher in search engine results, if you want to generate those much-needed leads and if you want to be seen and heard on world wide web marketing agency is your only bet! Working with a digital marketing agency can help you achieve all of these goals and more. So what are you waiting for? Contact a digital marketing agency today and start taking your business to the next level!</p>
     </div>
 
     <!-- <div class="subdiv right-subdiv">
@@ -191,9 +176,9 @@
 
 </div>
 <!-- socials -->
-<div class="socials-div">
+<!-- <div class="socials-div">
   <h2 class="heading">STALK US.</h2>
-</div>
+</div> -->
 
 
 
@@ -201,5 +186,6 @@
 
     <!-- Script -->
     <script src="script.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>
